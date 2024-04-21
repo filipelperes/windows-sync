@@ -15,7 +15,7 @@ $notes = "9NXQQ40LDW3X", "9WZDNCRFJ3MB", "Notion.Notion", "9P1JH1D9BG26", "XPFFZ
 $todo = "9NBLGGH5R558", "Doist.Todoist", "9NBLGGH4XXVW"
 
 # FROM MICROSOFT STORE: Telegram, Netflix, Prime Video, Disney+, onenote for windows 10, reddit, piccollage, alexa
-# MISSING: Format factory, Atube Catcher, Arc Browser, DaVinci Resolve, Premiere Rush, Photofiltre, Meta trader 4 e 5, pointofix, filezilla, diffchecker, muse hub, apowermirror
+# MISSING: Format factory, Atube Catcher, Arc Browser, DaVinci Resolve, Premiere Rush, Photofiltre, Meta trader 4 e 5, pointofix, filezilla, diffchecker, muse hub, apowermirror, apidog, hoppscotch, twitter (x)
 
 Write-Host "Configuring ExecutionPolicy"
 Set-ExecutionPolicy RemoteSigned
@@ -177,7 +177,22 @@ Write-Host "Installing  Bitwarden CLI"
 winget install --id  Bitwarden.CLI --accept-package-agreements
 
 Write-Host "Installing Clink"
-winget install clink --accept-package-agreements
+winget install --id chrisant996.Clink --accept-package-agreements
+
+Write-Host "Installing ProtonMail"
+winget install --id Proton.ProtonMail --accept-package-agreements
+
+Write-Host "Installing Proton Mail Bridge"
+winget install --id Proton.ProtonMailBridge --accept-package-agreements
+
+Write-Host "Installing Grammarly"
+winget install --id XPDDXX9QW8N9D7 --accept-package-agreements
+
+Write-Host "Installing Grammarly"
+winget install --id Grammarly.Grammarly --accept-package-agreements
+
+Write-Host "Installing Line"
+winget install --id XPFCC4CD725961 --accept-package-agreements
 
 Write-Host "Installing Pnpm"
 iwr https://get.pnpm.io/install.ps1 -useb | iex
