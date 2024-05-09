@@ -194,6 +194,9 @@ winget install --id Grammarly.Grammarly --accept-package-agreements
 Write-Host "Installing Line"
 winget install --id XPFCC4CD725961 --accept-package-agreements
 
+Write-Host "Installing Sider"
+winget install --id 9PF94J2D9F6X --accept-package-agreements
+
 Write-Host "Installing Pnpm"
 iwr https://get.pnpm.io/install.ps1 -useb | iex
 
