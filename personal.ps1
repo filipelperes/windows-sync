@@ -6,16 +6,16 @@ Write-Host "INSTALLING MODULE PERSONAL"
 $offices = "TheDocumentFoundation.LibreOffice", "Apache.OpenOffice", "Kingsoft.WPSOffice", "9NSGM705MQWC", "ONLYOFFICE.DesktopEditors", "9WZDNCRD29V9"
 $colorPicker = "martinchrzan.ColorPicker", "Toinane.Colorpicker"
 $videos = "BlenderFoundation.Blender.LTS", "Meltytech.Shotcut", "OpenShot.OpenShot", "KDE.Kdenlive", "VSDC.Editor", "FXHOME.HitFilmExpress", "Wondershare.Filmora", "ByteDance.CapCut", "LWKS.lightworks", "9P1J8S7CCWWT"
-$images = "ImageMagick.ImageMagick", "KDE.Krita", "9NBLGGH4TWWG", "9WZDNCRFJ10M", "9WZDNCRFJ1BH", "9NBLGGH0BRKQ", "'9NBLGGH6BGX8", "9NTJRFJ75TF3", "9NDKCLW54JBF", "9NWJ8JHT6WGW", "9P9S2QVKZFRD", "9P6R3X22085X", "9NWMNVL1CX60", "9WZDNCRCWFTB", "9WZDNCRFJB13", "9NBLGGH5FV99", "dotPDN.PaintDotNet", "Inkscape.Inkscape", "GIMP.GIMP", "9P94LH3Q1CP5", "Canva.Canva", "9WZDNCRFJ27N", "XPDLPKWG9SW2WD", "9P87M9TKNKVL"
+$images = "ImageMagick.ImageMagick", "KDE.Krita", "9NBLGGH4TWWG", "9WZDNCRFJ10M", "9WZDNCRFJ1BH", "9NBLGGH0BRKQ", "'9NBLGGH6BGX8", "9NTJRFJ75TF3", "9NDKCLW54JBF", "9NWJ8JHT6WGW", "9P9S2QVKZFRD", "9P6R3X22085X", "9NWMNVL1CX60", "9WZDNCRCWFTB", "9WZDNCRFJB13", "9NBLGGH5FV99", "dotPDN.PaintDotNet", "Inkscape.Inkscape", "GIMP.GIMP", "9P94LH3Q1CP5", "Canva.Canva", "9WZDNCRFJ27N", "XPDLPKWG9SW2WD", "9P87M9TKNKVL", "darktable.darktable"
 $bibles = "9WZDNCRDQF45", "9PPRWS532N91", "9WZDNCRFJ3B4", "9WZDNCRFJ3B4", "9WZDNCRDK3WP"
 $socials = "Discord.Discord", "Zoom.Zoom", "XPFM5P5KDWF0JP", "9WZDNCRFJ364", "9NKSQGP7F2NH", "9WZDNCRFJ2WL", "9WZDNCRF0083", "9WZDNCRFJ4Q7", "9NBLGGH5L9XT", "9MXBP1FB84CQ", "9PFHDSF91B9R", "9WZDNCRFJ32Q", "9NH2GPH4JZS4", "9PF9RTKMMQ69"
-$browsers = "Mozilla.Firefox", "Mozilla.Firefox.DeveloperEdition", "Opera.Opera", "Opera.OperaGX", "Opera.OperaCrypto", "Maxthon.Maxthon", "Vivaldi.Vivaldi", "Brave.Brave", "MullvadVPN.MullvadBrowser", "TorProject.TorBrowser", "Alex313031.Mercury", "PushPlayLabs.Sidekick", "Ghostery.GhosteryDawn"
+$browsers = "Mozilla.Firefox", "Mozilla.Firefox.DeveloperEdition", "Opera.Opera", "Opera.OperaGX", "Opera.OperaCrypto", "Maxthon.Maxthon", "Vivaldi.Vivaldi", "Brave.Brave", "MullvadVPN.MullvadBrowser", "TorProject.TorBrowser", "Alex313031.Mercury", "PushPlayLabs.Sidekick", "Ghostery.GhosteryDawn", "TheBrowserCompany.Arc"
 $entertainments = "Spotify.Spotify", "Stremio.Stremio"
 $notes = "9NXQQ40LDW3X", "9WZDNCRFJ3MB", "Notion.Notion", "9P1JH1D9BG26", "XPFFZHVGQWWLHB"
 $todo = "9NBLGGH5R558", "Doist.Todoist", "9NBLGGH4XXVW"
 
 # FROM MICROSOFT STORE: Telegram, Netflix, Prime Video, Disney+, onenote for windows 10, reddit, piccollage, alexa
-# MISSING: Format factory, Atube Catcher, Arc Browser, DaVinci Resolve, Premiere Rush, Photofiltre, Meta trader 4 e 5, pointofix, filezilla, diffchecker, muse hub, apowermirror, apidog, hoppscotch, twitter (x)
+# MISSING: Format factory, Atube Catcher, Zen Browser, DaVinci Resolve, Premiere Rush, Photofiltre, Meta trader 4 e 5, pointofix, filezilla, diffchecker, muse hub, apowermirror, apidog, hoppscotch, twitter (x), keytweak
 
 Write-Host "Configuring ExecutionPolicy"
 Set-ExecutionPolicy RemoteSigned
@@ -196,6 +196,9 @@ winget install --id XPFCC4CD725961 --accept-package-agreements
 
 Write-Host "Installing Sider"
 winget install --id 9PF94J2D9F6X --accept-package-agreements
+
+Write-Host "Installing MSI Afterburner"
+winget install --id Guru3D.Afterburner --accept-package-agreements
 
 Write-Host "Installing Pnpm"
 iwr https://get.pnpm.io/install.ps1 -useb | iex
