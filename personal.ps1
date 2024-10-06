@@ -125,6 +125,9 @@ winget install --id EaseUS.PartitionMaster --accept-package-agreements
 Write-Host "Installing Steam"
 winget install --id Valve.Steam --accept-package-agreements
 
+Write-Host "Installing League of legends"
+winget install --id RiotGames.LeagueOfLegends.BR --accept-package-agreements
+
 Write-Host "Installing VLC Media Player"
 winget install --id VideoLAN.VLC --accept-package-agreements
 
